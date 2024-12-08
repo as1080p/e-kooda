@@ -1,0 +1,102 @@
+.container-new{
+display: block;
+justify-content: center;
+}
+
+.profile-details {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin: 0 auto 50px auto;
+width: 90%;
+border-radius: 10px;
+padding: 20px;
+}
+
+
+.profile-info{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin: 20px;
+width: 90%;
+border-radius: 10px;
+}
+
+.profile-details h4 {
+margin-bottom: 5px; /* Reduce spacing between h4 and p */
+}
+
+.profile-actions {
+display: flex;
+justify-content: space-between;
+gap: 20px;
+margin-top: 20px;
+}
+
+.profile-actions button {
+padding: 10px 20px;
+background-color: #2C6B47;
+color: #EEF1E0;
+border: none;
+border-radius: 25px;
+font-size: 1rem;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.profile-actions button:hover {
+background-color: #A8D5BA;
+color:#363E3A;
+}
+
+.profile-actions a {
+text-decoration: none;
+}
+
+
+.return-history, .rewards {
+margin: 30px;
+padding: 20px;
+background-color: #CFDDCF;
+border-radius: 10px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.return-history h4 , .rewards h4 {
+margin-bottom: 15px;
+color: #2C6B47;
+}
+
+.return-history table , .rewards table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.return-history table th, .return-history table td, .rewards table th, .rewards table td {
+border: 1px solid #DDD;
+padding: 10px;
+text-align: left;
+}
+
+.return-history table th, .rewards table th {
+background-color: #A8D5BA;
+color: #363E3A;
+}
+
+H4{
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin:10px;
+    padding: 10px;
+    color: #2C6B47;
+}

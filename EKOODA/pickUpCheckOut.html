@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PICKUPCheckout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pickupcheckout.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+          <a href="index.html"><img src="img/ekoodalogo.png" alt="Logo" class="ekoodalogo"></a>
+          <span class="site-name">E KOODA</span>
+          <a href="login.html"><img src="img/acclogoekooda.png" alt="Profile Icon" class="profile-icon"></a>
+        </div>
+      </header>
+
+      <nav class="navbar">
+        <ul>
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="locateUs.html">Locate Us</a></li>
+          <li class="nav-item"><a href="eWaste.html">E-Waste Rules</a></li>
+          <li class="nav-item"><a href="addProduct.html">Add Product</a></li>
+          <li class="nav-item"><a href="aboutUs.html">About Us</a></li>
+        </ul>
+      </nav>
+
+    <div class="form-container">
+        <h2>Set Your Pick Up Details</h2>
+
+        <form id="details-form">
+            <!-- Date Selection -->
+            <div class="form-group">
+                <label for="date">Pick a Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <!-- Time Slot Selection -->
+            <div class="form-group time-slot-container" id="time-slot-container">
+                <label for="time-slot">Pick Time Slots:</label>
+                <div class="time-slot">
+                    <input type="time" name="start-time[]" required>
+                    <input type="time" name="end-time[]" required>
+                    <span class="remove-time-slot">Remove</span>
+                </div>
+            </div>
+
+            <div class="add-time-slot" id="add-time-slot">+ Add Another Time Slot</div>
+
+            <!-- Tips and Notes -->
+            <div class="form-group">
+                <label for="notes">Add any Tips or Notes:</label>
+                <textarea id="notes" name="notes" placeholder="Add any helpful notes..." required></textarea>
+            </div>
+
+            <!-- Location Confirmation -->
+            <div class="form-group">
+                <label for="location">Confirm Your Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter your location" required>
+            </div>
+
+            <!-- Confirm Button -->
+            <button type="submit">Confirm Details</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 E-Waste Collection Center. All Rights Reserved.</p>
+        <p>For more information, contact us at: <a href="mailto:info@ekooda.com">info@ekooda.com</a> or 9876543210</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        // Function to add a new time slot
+        document.getElementById('add-time-slot').addEventListener('click', function() {
+            const timeSlotContainer = document.getElementById('time-slot-container');
+            const newTimeSlot = document.createElement('div');
+            newTimeSlot.classList.add('time-slot');
+            newTimeSlot.innerHTML = `
+                <input type="time" name="start-time[]" required>
+                <input type="time" name="end-time[]" required>
+                <span class="remove-time-slot">Remove</span>
+            `;
+            timeSlotContainer.appendChild(newTimeSlot);
+
+            // Add remove functionality
+            newTimeSlot.querySelector('.remove-time-slot').addEventListener('click', function() {
+                timeSlotContainer.removeChild(newTimeSlot);
+            });
+        });
+
+        // Initial remove button functionality for the first time slot
+        document.querySelectorAll('.remove-time-slot').forEach(function(button) {
+            button.addEventListener('click', function() {
+                const timeSlot = button.closest('.time-slot');
+                timeSlot.remove();
+            });
+        });
+
+        // Form handling for submission
+        document.getElementById('details-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Collect data
+            const date = document.getElementById('date').value;
+            const startTimes = document.getElementsByName('start-time[]');
+            const endTimes = document.getElementsByName('end-time[]');
+            const notes = document.getElementById('notes').value;
+            const location = document.getElementById('location').value;
+
+            let timeSlots = [];
+            for (let i = 0; i < startTimes.length; i++) {
+                timeSlots.push({
+                    start: startTimes[i].value,
+                    end: endTimes[i].value
+                });
+            }
+
+            // Log data (you can send it to the server or process it further)
+            console.log('Date:', date);
+            console.log('Time Slots:', timeSlots);
+            console.log('Notes:', notes);
+            console.log('Location:', location);
+
+            alert('Details confirmed successfully!');
+        });
+    </script>
+</body>
+</html>

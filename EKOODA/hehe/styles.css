@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EEF1E0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centering content horizontally */
+    padding: 10px 20px;
+    background-color: #A8D5BA; /* Soft Sage Green */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 150px; /* Add space between elements */
+}
+
+.logo img {
+    height: 75px;
+}
+
+.site-name {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #2C6B47; /* Green Color */
+    letter-spacing: 7px; /* Add space between letters */
+}
+
+.profile-icon {
+    height: 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #A8D5BA;
+    padding: 10px 0;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    margin: 0;
+}
+
+.navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .nav-item {
+    list-style: none;
+    margin: 5px 15px;
+ }
+
+.navbar .nav-item a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #204e34;
+    padding: 8px 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-item a:hover {
+    background-color: #9ad2b1; /* Light Sage Green */
+}
+
+.navbar .nav-item a.active {
+    background-color: #8ccda7 ; /* Dark Green for active */
+
+}
+
+footer {
+    background-color: #A8D5BA;
+    padding: 20px;
+    text-align: center;
+    color:#2C6B47;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #2C6B47;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+

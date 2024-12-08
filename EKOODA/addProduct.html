@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - EKOODA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/addProduct.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="img/ekoodalogo.png" alt="Logo" class="ekoodalogo"></a>
+      <span class="site-name">E KOODA</span>
+      <a href="login.html"><img src="img/acclogoekooda.png" alt="Profile Icon" class="profile-icon"></a>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li class="nav-item"><a href="index.html">Home</a></li>
+      <li class="nav-item"><a href="locateUs.html">Locate Us</a></li>
+      <li class="nav-item"><a href="eWaste.html">E-Waste Rules</a></li>
+      <li class="nav-item"><a href="addProduct.html" class="active">Add Product</a></li>
+      <li class="nav-item"><a href="aboutUs.html">About Us</a></li>
+    </ul>
+  </nav>
+  
+  <div class="form-container">
+    <h1>ADD PRODUCT</h1>
+    <form>
+      <div class="form-group">
+        <label for="image">Upload an image:</label>
+        <input type="file" class="input" id="image" name="image" accept="image/jpg, image/jpeg, image/png" placeholder="only .png .jpeg .jpg files accepted">
+      </div>
+      <div class="form-group">
+        <label for="product-name">Product Name:</label>
+        <input type="text" class="input" id="product-name" name="product-name" placeholder="enter   name of the product with the company name">
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea class="input" id="description" name="description" rows="4" cols="50"  placeholder="give detailed description of products condition"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="product-category">Product Category:</label>
+        <select class="input" id="product-category" name="product-category">
+          <option value="Mobile Phone">Mobile Phone</option>
+          <option value="PC">PC</option>
+          <option value="Laptop">Laptop</option>
+          <option value="DigitalCamera">Digital Camera</option>
+          <option value="Calculator">Calculator</option>
+          <option value="Printer">Printer</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+      <div class="form-buttons">
+        <button type="button" onclick="window.location.href='addProduct.html'">ADD</button>
+        <button type="button" onclick="window.location.href='listOfProducts.html'">CONFIRM</button>
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    <div>
+        <p>&copy; 2024 E-Waste Collection Center. All Rights Reserved.</p>
+        <p>For more information, contact us at: <a href="mailto:info@ekooda.com">info@ekooda.com</a> or 9876543210</p>
+    </div>
+    <div class="social-links">
+        <p>Follow Us:
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </p>
+    </div>
+  </footer>
+
+</body>
+</html>

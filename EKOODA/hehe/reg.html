@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - EKOODA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="img/ekoodalogo.png" alt="Logo" class="ekoodalogo"></a>
+      <span class="site-name">E KOODA</span>
+      <a href="login.html"><img src="img/acclogoekooda.png" alt="Profile Icon" class="profile-icon"></a>
+    </div>
+  </header>
+  <nav class="navbar">
+    <ul>
+      <li class="nav-item"><a href="index.html">Home</a></li>
+      <li class="nav-item"><a href="locateUs.html">Locate Us</a></li>
+      <li class="nav-item"><a href="eWaste.html">E-Waste Rules</a></li>
+      <li class="nav-item"><a href="addProduct.html">Add Product</a></li>
+      <li class="nav-item"><a href="aboutUs.html">About Us</a></li>
+    </ul>
+  </nav>
+   <div class="container-new">
+    <div class="box">
+      <div class="left-section">
+        <h1>Welcome to EKOODA!</h1>
+        <p>Register with us to get started with your E-Waste journey!</p>
+        <img src="C:\Users\susha\OneDrive\Desktop\timepass\shhhhh\logo.jpg" alt="Recycling Icon" class="ekoodalogoregisternlogin">
+      </div>
+      <div class="right-section">
+        <h3>Register Here!</h3>
+        <div class="form-container">
+          <form onsubmit="window.location.href='profile.html'; return false;">
+            <div class="form-group">
+              <label for="username">Email</label><br>
+              <input type="email" id="username" name="username" placeholder="enter valid email-id"><br><br>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label><br>
+              <input type="password" id="password" name="password" minlength="8" placeholder="enter valid password" required><br><br>
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label><br>
+              <input type="password" id="confirm-password" name="confirm-password" minlength="8" placeholder="confirm-password" required><br><br>
+            </div>
+            <div class="form-buttons">
+              <button type="submit" class="login-btn">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+ </div>
+
+
+
+  <footer>
+    <div>
+        <p>&copy; 2024 E-Waste Collection Center. All Rights Reserved.</p>
+        <p>For more information, contact us at: <a href="mailto:info@ekooda.com">info@ekooda.com</a> or 9876543210</p>
+    </div>
+    <div class="social-links">
+      <p>Follow Us:
+        <a href="#">Facebook</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">Instagram</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

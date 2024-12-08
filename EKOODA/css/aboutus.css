@@ -1,0 +1,130 @@
+.main {
+    padding: 50px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+
+  .aboutus {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .aboutus h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #363E3A;
+    letter-spacing: 2px;
+  }
+
+  .aboutus p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.8;
+  }
+
+  .values {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .values h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+
+  .values-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .value {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .value:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .value i {
+    font-size: 40px;
+    color: #A8D5BA; /* Soft Sage Green */
+    margin-bottom: 15px;
+  }
+
+  .value h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  .value p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+
+  /* Reviews Section */
+  .reviews {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .reviews h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+
+  .reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .review {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .review:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .review i {
+    font-size: 30px;
+    color: #FFD700; /* Gold for the stars */
+    margin-bottom: 10px;
+  }
+
+  .review p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+
+  .review p:first-of-type {
+    font-weight: bold;
+    color: #333;
+  }

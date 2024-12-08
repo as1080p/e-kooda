@@ -1,0 +1,45 @@
+.questions {
+    color: #204e34;
+    font-size: 1.5rem;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+.answers {
+    display: flex;
+    justify-content: center;
+    margin: 20px 100px;
+    line-height: 2.5;
+    letter-spacing: 1px;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 20px 0;
+    letter-spacing: 10px;
+    color: #363E3A;
+}
+
+.locateUsImg {
+    width: 500px;
+    height: 700px;
+    margin: 20px auto;  /* Auto margin for horizontal centering */
+    display: block;     /* Make the image block-level to allow centering */
+}
+
+.stats{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    color: #204e34;
+}
+
+.stat{
+    margin: 0 30px;
+    vertical-align: auto;
+    text-align: center;
+    letter-spacing: 2px;
+}
