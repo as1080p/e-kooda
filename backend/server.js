@@ -19,9 +19,9 @@ const adminLogin = require('./routes/adminLogin');
 const addProduct = require('./routes/addProduct');
 const pickUpDrop = require('./routes/pickUpDrop');
 const rewardPoints = require('./routes/rewardPoints');
-const editProfile = require('./routes/editProfile');
+const editProfile = require('./auth dump/editProfile');
 const editProfileNoPhoto = require('./routes/editProfileNoPhoto');
-const logout = require('./routes/logout');
+const logout = require('./auth dump/logout');
 
 // Use Routes
 app.use('/userLogin', userLogin);
@@ -30,9 +30,10 @@ app.use('/userRegister', userRegister);
 //app.use('/addProduct', addProduct);
 //app.use('/pickUpDrop', pickUpDrop);
 //app.use('/rewardPoints', rewardPoints);
-app.use('/editProfile', editProfile);
+//app.use('/editProfile', editProfile);
 app.use('/editProfileNoPhoto', editProfileNoPhoto);
 //app.use('/logout', logout);
 
 
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+console.log('Check Postman E-Kooda for routes!')

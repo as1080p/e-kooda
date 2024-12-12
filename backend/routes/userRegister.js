@@ -3,8 +3,12 @@ const router = express.Router();
 const supabase = require('../config/supabaseClient');
 //const jwt = require('jsonwebtoken');
 
+console.log('User trying to register...')
+
+
 router.post('/', async (req, res) => {
-  const { email_id, password } = req.body;
+  const { email_id, password } = req.body;    
+  console.log('email:' + email_id + ' ' + 'password:' + password);  
 
   if (!email_id || !password) {
     return res.status(400).json({ error: 'Email and Password are required.' });
