@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const supabase = require('../config/supabaseClient');
+//const jwt = require('jsonwebtoken');
 
 router.post('/', async (req, res) => {
   const { email_id, password } = req.body;
@@ -17,8 +18,11 @@ router.post('/', async (req, res) => {
     if (error) {
       throw error;
     }
+    //const token = jwt.sign({ email_id }, process.env.JWT_SECRET, {
+    //expiresIn: '1h',
+    //});
 
-    res.status(201).json({ message: 'User registered successfully!' });
+    res.status(201).json({ message: 'User registered successfully!', redirect: '/editProfileNoPhoto' });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
